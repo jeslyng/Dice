@@ -8,7 +8,6 @@ void setup()
 }
 void draw()
 {
-  background(149, 235, 52);
   strokeWeight(5);
   sum = 0;
   for (int i = 5; i< 500; i+=50){
