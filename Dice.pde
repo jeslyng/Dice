@@ -17,11 +17,11 @@ void mousePressed()
   redraw();
 }
 
-void rollDice(int xEdge, int yEdge, int size) {
-  strokeWeight(size/6);
-  for (int i = 5; i< xEdge; i+=size+20) {
-    for (int j = 5; j < yEdge; j+=size+20) {
-      Die urmom = new Die(i, j, size);
+void rollDice(int xEdge, int yEdge, int diceSize) {
+  strokeWeight(diceSize/6);
+  for (int i = 5; i< xEdge; i+=diceSize+20) {
+    for (int j = 5; j < yEdge; j+=diceSize+20) {
+      Die urmom = new Die(i, j, diceSize);
       urmom.roll();
       urmom.show();
       sum = sum + urmom.num;
