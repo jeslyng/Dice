@@ -1,17 +1,15 @@
 int sum = 0;
 void setup()
 {
-     noLoop();
-     size(550,600);
-     background(149, 235, 52);
-     
+  noLoop();
+  size(550, 600);
+  background(149, 235, 52);
 }
 void draw()
 {
   background(149, 235, 52);
-  strokeWeight(5);
   sum = 0;
-  rollDice(550,500,30);
+  rollDice(550, 500, 30);
 }
 
 void mousePressed()
@@ -19,11 +17,11 @@ void mousePressed()
   redraw();
 }
 
-void rollDice(int xEdge, int yEdge, int size){
+void rollDice(int xEdge, int yEdge, int size) {
   strokeWeight(size/6);
-  for (int i = 5; i< xEdge; i+=size+20){
-    for (int j = 5; j < yEdge; j+=size+20){
-      Die urmom = new Die(i,j,size);
+  for (int i = 5; i< xEdge; i+=size+20) {
+    for (int j = 5; j < yEdge; j+=size+20) {
+      Die urmom = new Die(i, j, size);
       urmom.roll();
       urmom.show();
       sum = sum + urmom.num;
@@ -32,10 +30,10 @@ void rollDice(int xEdge, int yEdge, int size){
   text("Your roll: " + sum, 230, 550);
 }  
 
-class Die //models one single dice cube
+class Die 
 {
   int myX, myY, num, mySize;
-  
+
   Die(int x, int y, int size)
   {   
     myX = x;
@@ -49,22 +47,22 @@ class Die //models one single dice cube
   }
   void show()
   {
-    square(myX,myY,mySize);
-    if (num==0){
+    square(myX, myY, mySize);
+    if (num==0) {
       point(myX + mySize/2, myY + mySize/2);
-    } else if (num ==1){
+    } else if (num ==1) {
       point(myX + mySize/5, myY + mySize/5);
       point(myX + 4*mySize/5, myY + 4*mySize/5);
-    } else if (num ==2){
+    } else if (num ==2) {
       point(myX + mySize/5, myY + mySize/5);
       point(myX + 4*mySize/5, myY + 4*mySize/5);
       point(myX + mySize/2, myY + mySize/2);
-    } else if (num == 3){
+    } else if (num == 3) {
       point(myX + mySize/5, myY + mySize/5);
       point(myX + 4*mySize/5, myY + 4*mySize/5);
       point(myX + mySize/5, myY + 4*mySize/5);
       point(myX + 4*mySize/5, myY + mySize/5);
-    } else if (num == 4){
+    } else if (num == 4) {
       point(myX + mySize/5, myY + mySize/5);
       point(myX + 4*mySize/5, myY + 4*mySize/5);
       point(myX + mySize/5, myY + 4*mySize/5);
