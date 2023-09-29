@@ -18,7 +18,7 @@ void mousePressed()
 }
 
 void rollDice(int xEdge, int yEdge, int diceSize) {
-  strokeWeight(diceSize/6);
+  strokeWeight((int)(diceSize/6));
   for (int i = 5; i< xEdge; i+=diceSize+20) {
     for (int j = 5; j < yEdge; j+=diceSize+20) {
       Die urmom = new Die(i, j, diceSize);
