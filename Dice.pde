@@ -50,32 +50,32 @@ class Die
   {
     square(myX, myY, mySize);
     if (num==0) {
-      point(myX + mySize/2, myY + mySize/2);
+      point(myX + 15, myY + 15);
     } else if (num ==1) {
-      point(myX + mySize/5, myY + mySize/5);
-      point(myX + 4*mySize/5, myY + 4*mySize/5);
+      point(myX + 6, myY + 6);
+      point(myX + 4*6, myY + 4*6);
     } else if (num ==2) {
-      point(myX + mySize/5, myY + mySize/5);
-      point(myX + 4*mySize/5, myY + 4*mySize/5);
-      point(myX + mySize/2, myY + mySize/2);
+      point(myX + 6, myY + 6);
+      point(myX + 4*6, myY + 4*6);
+      point(myX + 15, myY + 15);
     } else if (num == 3) {
-      point(myX + mySize/5, myY + mySize/5);
-      point(myX + 4*mySize/5, myY + 4*mySize/5);
-      point(myX + mySize/5, myY + 4*mySize/5);
-      point(myX + 4*mySize/5, myY + mySize/5);
+      point(myX + 6, myY + 6);
+      point(myX + 4*6, myY + 4*6);
+      point(myX + 6, myY + 4*6);
+      point(myX + 4*6, myY + 6);
     } else if (num == 4) {
-      point(myX + mySize/5, myY + mySize/5);
-      point(myX + 4*mySize/5, myY + 4*mySize/5);
-      point(myX + mySize/5, myY + 4*mySize/5);
-      point(myX + 4*mySize/5, myY + mySize/5);
-      point(myX + mySize/2, myY + mySize/2);
+      point(myX + 6, myY + 6);
+      point(myX + 4*6, myY + 4*6);
+      point(myX + 6, myY + 4*6);
+      point(myX + 4*6, myY + 6);
+      point(myX + 15, myY + 15);
     } else {
-      point(myX + mySize/5, myY + mySize/5);
-      point(myX + 4*mySize/5, myY + 4*mySize/5);
-      point(myX + mySize/5, myY + 4*mySize/5);
-      point(myX + 4*mySize/5, myY + mySize/5);
-      point(myX + mySize/5, myY + mySize/2);
-      point(myX + 4*mySize/5, myY + mySize/2);
+      point(myX + 6, myY + 6);
+      point(myX + 4*6, myY + 4*6);
+      point(myX + 6, myY + 4*6);
+      point(myX + 4*6, myY + 6);
+      point(myX + 6, myY + 15);
+      point(myX + 4*6, myY + 15);
     }
   }
 }
