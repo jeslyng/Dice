@@ -18,8 +18,7 @@ void mousePressed()
 }
 
 void rollDice(int xEdge, int yEdge, float diceSize) {
-  //strokeWeight(5);
-  strokeWeight(diceSize/6); //processing only not github
+  strokeWeight(diceSize/6); 
   for (int i = 5; i< xEdge; i+=diceSize+20) {
     for (int j = 5; j < yEdge; j+=diceSize+20) {
       Die urmom = new Die(i, j, diceSize);
@@ -50,35 +49,7 @@ class Die
   void show()
   {
     rect(myX, myY, mySize,mySize);
-    /*if (num==0) {
-      point(myX + 15, myY + 15);
-    } else if (num ==1) {
-      point(myX + 6, myY + 6);
-      point(myX + 4*6, myY + 4*6);
-    } else if (num ==2) {
-      point(myX + 6, myY + 6);
-      point(myX + 4*6, myY + 4*6);
-      point(myX + 15, myY + 15);
-    } else if (num == 3) {
-      point(myX + 6, myY + 6);
-      point(myX + 4*6, myY + 4*6);
-      point(myX + 6, myY + 4*6);
-      point(myX + 4*6, myY + 6);
-    } else if (num == 4) {
-      point(myX + 6, myY + 6);
-      point(myX + 4*6, myY + 4*6);
-      point(myX + 6, myY + 4*6);
-      point(myX + 4*6, myY + 6);
-      point(myX + 15, myY + 15);
-    } else {
-      point(myX + 6, myY + 6);
-      point(myX + 4*6, myY + 4*6);
-      point(myX + 6, myY + 4*6);
-      point(myX + 4*6, myY + 6);
-      point(myX + 6, myY + 15);
-      point(myX + 4*6, myY + 15);
-      */
-      if (num==0) { //for processing only not github
+      if (num==0) { 
       point(myX + mySize/2, myY + mySize/2);
     } else if (num ==1) {
       point(myX + mySize/5, myY + mySize/5);
@@ -104,8 +75,7 @@ class Die
       point(myX + mySize/5, myY + 4*mySize/5);
       point(myX + 4*mySize/5, myY + mySize/5);
       point(myX + mySize/5, myY + mySize/2);
-      point(myX + 4*mySize/5, myY + mySize/2);
-      
+      point(myX + 4*mySize/5, myY + mySize/2);    
     }
   }
 }
