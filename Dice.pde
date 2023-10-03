@@ -24,7 +24,7 @@ void rollDice(int xEdge, int yEdge, float diceSize) {
       Die urmom = new Die(i, j, diceSize);
       urmom.roll();
       urmom.show();
-      sum = sum + urmom.num;
+      sum = sum + urmom.num +1;
     }
   }
   text("Your roll: " + sum, 230, 550);
